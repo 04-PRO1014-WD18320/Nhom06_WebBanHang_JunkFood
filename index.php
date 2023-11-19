@@ -1,25 +1,26 @@
 <?php
-    session_start();
-    include "mdel/pdo.php";
-    include "mdel/danhmuc.php";
-    include "mdel/sanpham.php";
-    include "mdel/taikhoan.php";
-    include "./view/header.php";
+session_start();
+include "./view/header.php";
+include "./view/home.php";
+include "./view/footer.php";
+include "./mdel/pdo.php";
+include "mdel/pdo.php";
+include "mdel/danhmuc.php";
+include "mdel/sanpham.php";
+include "mdel/taikhoan.php";
 
-
-    
-    if((isset($_GET['act']))&&($_GET['act']!="")){
-        $act=$_GET['act'];
-        switch ($act) {
-            case 'lienhe':
-                include "./view/home.php";
-                break;
-            default:
-            include "./view/home.php";
-                break;
-            }
-        }else{
-            include "./view/home.php";
-        }
-        include "./view/footer.php";
+if ((isset($_GET['act'])) && ($_GET['act'] != "")) {
+    $act = $_GET['act'];
+    switch ($act) {
+        case 'lienhe':
+            include "view/home.php";
+            break;
+        default:
+            include "view/home.php";
+            break;
+    }
+} else {
+    include "view/home.php";
+}
+include "view/footer.php";
 ?>
