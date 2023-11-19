@@ -18,9 +18,9 @@
     <div class="conten3">
         <ul>
            <h3>Phương thức thanh toán</h3>
-            <li><a href=""><img src="../images/thengahang.jpg" width="50px" height="30px" alt=""></a></li>
-            <li><a href=""><img src="../images/thenganhang1.jpg" width="50px" height="30px" alt=""></a></li>
-            <li><a href=""><img src="../images/thenganhang2.webp" width="50px" height="30px" alt=""></a></li>
+            <li><a href=""><img src="./images/thengahang.jpg" width="50px" height="30px" alt=""></a></li>
+            <li><a href=""><img src="./images/thenganhang1.jpg" width="50px" height="30px" alt=""></a></li>
+            <li><a href=""><img src="./images/thenganhang2.webp" width="50px" height="30px" alt=""></a></li>
         </ul>
     </div>
 </div>

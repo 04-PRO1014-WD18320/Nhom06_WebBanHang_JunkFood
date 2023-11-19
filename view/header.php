@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="../icons/fontawesome-free-6.4.2-web/js/all.min.js"></script>
-    <link rel="stylesheet" href="../longcss/styles.css">
+    <script src="./icons/fontawesome-free-6.4.2-web/js/all.min.js"></script>
+    <link rel="stylesheet" href="./longcss/styles.css">
 </head>
 <body>
     <div class="container">
         <div class="header">
             <div class="logo">
-                <img src="../images/logo.jpg" width="80" height="80" alt="">
+                <img src="./images/logo.jpg" width="80" height="80" alt="">
             </div>
             <div class="menu">
                 <ul>
@@ -43,19 +43,19 @@
                 <!-- Full-width images with number and caption text -->
                 <div class="mySlides fade">
                 <div class="numbertext">1 / 3</div>
-                <img src="../images/doanvat1.jpg" width="1000px" height="400px">
+                <img src="./images/doanvat1.jpg" width="1000px" height="400px">
                 <div class="text">Caption Text</div>
                 </div>
 
                 <div class="mySlides fade">
                 <div class="numbertext">2 / 3</div>
-                <img src="../images/doanvat2.jpg" width="1000px"  height="400px">
+                <img src="./images/doanvat2.jpg" width="1000px"  height="400px">
                 <div class="text">Caption Two</div>
                 </div>
 
                 <div class="mySlides fade">
                 <div class="numbertext">3 / 3</div>
-                <img src="../images/doanvat3.jpg" width="1000px"  height="400px">
+                <img src="./images/doanvat3.jpg" width="1000px"  height="400px">
                 <div class="text">Caption Three</div>
                 </div>
 

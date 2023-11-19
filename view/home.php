@@ -3,7 +3,7 @@
       <a href=""><h1>Xem tất cả sản phẩm</h1></a>
     </div>
       <div class="boxsp mt">
-          <img src="../images/banhtay2.jpg" width="100%" height="150px" alt="">
+          <img src="./images/banhtay2.jpg" width="100%" height="150px" alt="">
           <div class="namesp">
               Bánh quy nhân đậu
           </div>
