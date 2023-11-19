@@ -23,7 +23,7 @@ if (is_file($hinhpath)) {
                     foreach ($listdanhmuc as $danhmuc) {
                         extract($danhmuc);
                         if ($iddm == $id) $s ="selected"; else $s = "";
-                        echo ' <option value="' . $id . '" ' . $s . '>' . $name . '</option>';
+                        echo ' <option value="' . $id . '" ' . $s . '>' . $namedm . '</option>';
                     } 
                     ?>
 
