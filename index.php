@@ -21,6 +21,21 @@ if ((isset($_GET['act'])) && ($_GET['act'] != "")) {
             }
             include "view/login/dangky.php";
             break;
+        case 'dangnhap':
+            if(isset($_POST['dangnhap'])&&($_POST['dangnhap'])){
+                $user=$_POST['user'];
+                $pass=$_POST['pass'];
+                $checkuser=checkuser($user,$pass);
+                if(is_array($checkuser)){
+                    $_SESSION['user']=$checkuser;
+                    // $thongbao="ban da dang nhap thanh cong";
+                    header('Location: index.php');
+                }else{
+                    $thongbao="tai khoan ko ton tai vui long kiem tra hoac dang ky";
+                }
+            }
+            include "view/login/dangnhap.php";
+            break;
         default:
             include "view/home.php";
             break;

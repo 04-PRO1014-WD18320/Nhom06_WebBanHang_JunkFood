@@ -40,7 +40,7 @@
             <input type="submit" value="Đăng Ký" name="dangky" class="btn-login">
 
             <div class="register-link">
-                <p> Do you already have an account! <a href="http://localhost/Nhom06_WebBanHang_JunkFood/view/login/dangnhap.php">Login</a></p>
+                <p> Do you already have an account! <a href="index.php?act=dangnhap">Login</a></p>
             </div>
         </form>
         <?php

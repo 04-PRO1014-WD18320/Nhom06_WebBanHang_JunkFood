@@ -6,6 +6,7 @@
     <title>Document</title>
     <script src="./icons/fontawesome-free-6.4.2-web/js/all.min.js"></script>
     <link rel="stylesheet" href="./longcss/styles.css">
+    <link rel="stylesheet" href="../css/du.css">
 </head>
 <body>
     <div class="container">
@@ -31,7 +32,7 @@
                 </div>
             </div>
             <div class="icons">
-                <a href="http://localhost/Nhom06_WebBanHang_JunkFood/view/login/dangnhap.php"><i class="fa-solid fa-user"></i></a>
+                <a href="index.php?act=dangnhap"><i class="fa-solid fa-user"></i></a>
                 <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
             </div>
         </div>
