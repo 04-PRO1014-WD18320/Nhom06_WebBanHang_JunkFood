@@ -1,9 +1,6 @@
 <?php
 session_start();
-include "./view/header.php";
-include "./view/home.php";
-include "./view/footer.php";
-include "./mdel/pdo.php";
+include "view/header.php";
 include "mdel/pdo.php";
 include "mdel/danhmuc.php";
 include "mdel/sanpham.php";
@@ -12,8 +9,17 @@ include "mdel/taikhoan.php";
 if ((isset($_GET['act'])) && ($_GET['act'] != "")) {
     $act = $_GET['act'];
     switch ($act) {
-        case 'lienhe':
-            include "view/home.php";
+        case 'dangky':
+            if(isset($_POST['dangky'])&&($_POST['dangky'])){
+                $email=$_POST['email'];
+                $user=$_POST['user'];
+                $pass=$_POST['pass'];
+                $tel=$_POST['tel'];
+                $address=$_POST['address'];
+                insert_taikhoan($email,$user,$pass,$tel,$address);
+                $thongbao="Đăng Ký Thành Công";
+            }
+            include "view/login/dangky.php";
             break;
         default:
             include "view/home.php";
