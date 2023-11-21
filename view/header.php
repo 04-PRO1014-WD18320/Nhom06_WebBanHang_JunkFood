@@ -16,7 +16,7 @@
             </div>
             <div class="menu">
                 <ul>
-                    <li><a href="">Trang chủ</a></li>
+                    <li><a href="index.php">Trang chủ</a></li>
                     <li><a href="">Đồ khô</a></li>
                     <li><a href="">Trái cây</a></li>
                     <li><a href="">Đồ uống</a></li>
@@ -32,7 +32,7 @@
                 </div>
             </div>
             <div class="icons">
-                <a href="index.php?act=dangnhap"><i class="fa-solid fa-user"></i></a>
+                <a href="view/login/dangnhap.php"><i class="fa-solid fa-user"></i></a>
                 <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
             </div>
         </div>
