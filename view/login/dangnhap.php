@@ -16,7 +16,7 @@
         <?php
             }else{
         ?>
-        <form action="">
+        <form action="index.php?act=dangnhap">
             <h1>Login</h1>
             <div class="input-box">
                 <input type="text" name="user" placeholder="Username"
@@ -34,10 +34,10 @@
                 <a href="#">Forgot passwork?</a>
             </div>
 
-            <button type="submit" class="btn-login">Login</button>
+            <input type="submit" class="btn-login" name="dangnhap" value="Đăng Nhập">
             
             <div class="register-link">
-                <p> Don't have account? <a href="index.php?act=dangky">Register</a></p>
+                <p> Don't have account? <a href="dangky.php">Register</a></p>
             </div>
             <?php
                 if(isset($loginMess) && $loginMess != ""){

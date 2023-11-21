@@ -40,7 +40,7 @@
             <input type="submit" value="Đăng Ký" name="dangky" class="btn-login">
 
             <div class="register-link">
-                <p> Do you already have an account! <a href="index.php?act=dangnhap">Login</a></p>
+                <p> Do you already have an account! <a href="dangnhap.php">Login</a></p>
             </div>
         </form>
         <?php
