@@ -9,14 +9,7 @@
 </head>
 <body>
     <div class="wrapper">
-        <?php
-            if(isset($_SESSION['user'])){
-            extract($_SESSION['user']);
-        ?>
-        <?php
-            }else{
-        ?>
-        <form action="index.php?act=dangnhap">
+        <form action="../../index.php?act=dangnhap" method="post">
             <h1>Login</h1>
             <div class="input-box">
                 <input type="text" name="user" placeholder="Username"
@@ -39,13 +32,9 @@
             <div class="register-link">
                 <p> Don't have account? <a href="dangky.php">Register</a></p>
             </div>
-            <?php
-                if(isset($loginMess) && $loginMess != ""){
-                    echo $loginMess;
-                }
-            ?>
+            
         </form>
-        <?php }?>
+        
     </div>
 </body>
 </html>

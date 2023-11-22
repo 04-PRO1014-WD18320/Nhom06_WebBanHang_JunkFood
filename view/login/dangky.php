@@ -9,7 +9,7 @@
 </head>
 <body>
     <div class="wrapper">
-        <form action="index.php?act=dangky" method="post">
+        <form action="../../index.php?act=dangky" method="post">
             <h1>Register</h1>
             <div class="input-box">
                 <input type="email" name="email" placeholder="Emaill"
@@ -37,7 +37,7 @@
                 <i class='bx bxs-home' ></i>
             </div>
             
-            <input type="submit" value="Đăng Ký" name="dangky" class="btn-login">
+          <input type="submit" value="Đăng Ký" name="dangky" class="btn-login">
 
             <div class="register-link">
                 <p> Do you already have an account! <a href="dangnhap.php">Login</a></p>
