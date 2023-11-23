@@ -1,5 +1,6 @@
 <?php
 session_start();
+ob_start();
 include "view/header.php";
 include "mdel/pdo.php";
 include "mdel/danhmuc.php";
@@ -16,10 +17,9 @@ if ((isset($_GET['act'])) && ($_GET['act'] != "")) {
                 $pass=$_POST['pass'];
                 $tel=$_POST['tel'];
                 $address=$_POST['address'];
-                insert_taikhoan($email,$user,$pass,$tel,$address);
-                $thongbao="Đăng Ký Thành Công";
-                
+                insert_taikhoan($email,$user,$pass,$tel,$address); 
             }
+            $thongbao="Đăng Ký Thành Công";
             // include "view/login/dangky.php";
             break;
         case 'dangnhap':
@@ -36,6 +36,11 @@ if ((isset($_GET['act'])) && ($_GET['act'] != "")) {
             }
             // include "view/login/dangky.php";
             break;
+        case 'thoat':
+                session_unset();
+                // header('Location: index.php');
+                // include_once "index.php";
+                break;
         default:
             include "view/home.php";
             break;

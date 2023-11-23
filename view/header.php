@@ -6,7 +6,7 @@
     <title>Document</title>
     <script src="./icons/fontawesome-free-6.4.2-web/js/all.min.js"></script>
     <link rel="stylesheet" href="./longcss/styles.css">
-    <link rel="stylesheet" href="../css/du.css">
+    <link rel="stylesheet" href="./css/du.css">
 </head>
 <body>
     <div class="container">
@@ -15,11 +15,11 @@
                 <img src="./images/logo.jpg" width="80" height="80" alt="">
             </div>
             <div class="chek">
-            <?php
+                <?php
                     if(isset($_SESSION['user'])) :
                     extract($_SESSION['user']);
                 ?>
-                    <div class="row mb10">
+                    <div class="user">
                                 <a href="#">Xin Chao</a>  <?=$user?>
                             </div>
                     <!-- <li><a href="../admin/"> -->
@@ -30,7 +30,7 @@
                 ?>
                     </a>
                 </li>
-                <li><a href="#">Dang xuat</a></li>
+                <li class="dangxuat"><a href="index.php?act=thoat">Dang xuat</a></li>
                 <?php endif?>
             </div>
             <div class="menu">
