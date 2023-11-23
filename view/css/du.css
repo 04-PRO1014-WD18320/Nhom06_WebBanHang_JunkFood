@@ -9,7 +9,7 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: url('../img/anhogin.jpg') no-repeat;
+    background: url('anhlogin.jpg') no-repeat;
     background-size: cover;
     background-position: center;
 }
@@ -97,3 +97,11 @@ body{
 .register-link p a:hover{
     text-decoration: underline;
 }
+/* .user a{
+   background: red;
+   height: 50px;
+}
+.dangxuat a{
+    width: 100px;
+    background: white;
+} */
