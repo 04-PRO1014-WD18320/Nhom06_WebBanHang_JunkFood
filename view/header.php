@@ -14,25 +14,6 @@
             <div class="logo">
                 <img src="./images/logo.jpg" width="80" height="80" alt="">
             </div>
-            <div class="chek">
-                <?php
-                    if(isset($_SESSION['user'])) :
-                    extract($_SESSION['user']);
-                ?>
-                    <div class="user">
-                                <a href="#">Xin Chao</a>  <?=$user?>
-                            </div>
-                    <li><a href="../admin/">
-                <?php
-                    if($role == 1){
-                        echo 'toi trang quan tri';
-                    }
-                ?>
-                    </a>
-                </li>
-                <li class="dangxuat"><a href="index.php?act=thoat">Dang xuat</a></li>
-                <?php endif?>
-            </div>
             <div class="menu">
                 <ul>
                     <li><a href="index.php">Trang chủ</a></li>
