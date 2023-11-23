@@ -22,7 +22,7 @@
                     <div class="user">
                                 <a href="#">Xin Chao</a>  <?=$user?>
                             </div>
-                    <!-- <li><a href="../admin/"> -->
+                    <li><a href="../admin/">
                 <?php
                     if($role == 1){
                         echo 'toi trang quan tri';
@@ -36,10 +36,10 @@
             <div class="menu">
                 <ul>
                     <li><a href="index.php">Trang chủ</a></li>
-                    <li><a href="">Đồ khô</a></li>
-                    <li><a href="">Trái cây</a></li>
-                    <li><a href="">Đồ uống</a></li>
-                    <li><a href="">Bánh tươi</a></li>
+                    <li><a href="#">Đồ khô</a></li>
+                    <li><a href="#">Trái cây</a></li>
+                    <li><a href="#">Đồ uống</a></li>
+                    <li><a href="#">Bánh tươi</a></li>
                 </ul>
             </div>
             <div class="search">
@@ -51,8 +51,16 @@
                 </div>
             </div>
             <div class="icons">
+                <?php
+                if(isset($_SESSION['username'])&&($_SESSION['username']!="")){
+                    echo '<a href="index.php?act=userinfo">'.$_SESSION['username'].'</a>';
+                    echo '<a href="index.php?act=thoat">thoat</a>';
+                }else{
+                
+                ?>
                 <a href="view/login/dangnhap.php"><i class="fa-solid fa-user"></i></a>
-                <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                <?php }?>
+                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
             </div>
         </div>
         <div class="banner mt">

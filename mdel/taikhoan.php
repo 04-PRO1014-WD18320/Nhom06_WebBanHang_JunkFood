@@ -8,5 +8,12 @@
         $taikhoan=pdo_query_one($sql);
         return $taikhoan;
     }
-    
+    function getuserinfo($user,$pass){
+        $conn=pdo_get_connection();
+        $stmt = $conn->prepare("SELECT * FROM taikhoan WHERE user='".$user."' AND pass='".$pass."'");
+        $stmt->execute();
+        $result = $stmt->setFetchMode(PDO::FETCH_ASSOC);
+        $kq=$stmt->fetchAll();
+        return $kq;
+    }
 ?>

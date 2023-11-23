@@ -1,11 +1,11 @@
 <?php
 session_start();
 ob_start();
-include "view/header.php";
 include "mdel/pdo.php";
 include "mdel/danhmuc.php";
 include "mdel/sanpham.php";
 include "mdel/taikhoan.php";
+include "view/header.php";
 
 if ((isset($_GET['act'])) && ($_GET['act'] != "")) {
     $act = $_GET['act'];
@@ -26,19 +26,24 @@ if ((isset($_GET['act'])) && ($_GET['act'] != "")) {
             if(isset($_POST['dangnhap'])&&($_POST['dangnhap'])){
                 $user=$_POST['user'];
                 $pass=$_POST['pass'];
-                $checkuser=checkuser($user,$pass);
-                if(is_array($checkuser)){
-                    $_SESSION['user']=$checkuser;
-                    // header('Location: index.php');
+                $kq=getuserinfo($user,$pass);
+                $role=$kq[0]['role'];
+                if($role==1){
+                    $_SESSION['role']=$role;
+                    header('location: admin/index.php');
                 }else{
-                    $thongbao="tai khoan ko ton tai vui long kiem tra hoac dang ky";
+                    $_SESSION['role']=$role;
+                    $_SESSION['iduser']=$kq[0]['id'];
+                    $_SESSION['username']=$kq[0]['user'];
+                    header('location: index.php');
+                    break;
                 }
             }
-            // include "view/login/dangky.php";
-            break;
         case 'thoat':
-                session_unset();
-                // header('Location: index.php');
+                unset($_SESSION['role']);
+                unset($_SESSION['iduser']);
+                unset($_SESSION['username']);
+                header('Location: index.php');
                 // include_once "index.php";
                 break;
         default:
