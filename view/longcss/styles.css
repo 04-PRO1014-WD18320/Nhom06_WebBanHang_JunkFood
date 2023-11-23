@@ -1,7 +1,6 @@
 *{
     box-sizing: border-box;
     font-family: sans-serif;
-    font-size: 0.7vw;
 }
 .container{
     width: 70%;
@@ -47,23 +46,20 @@
     position: absolute;
     left: 25%;
     top:50px;
-    display: flex;
- 
 }
-.search .input input[type="text"]{
+.search  input[type="text"]{
     width: 500px;
     padding: 10px;
-    margin-right: 15px;
+    margin-right: 8px;
     border: none;
     border-radius: 8px red solid;
 }
-.search .iconsearch a{
+.search  a{
     color: red;
-    font-size: 25px;
-    padding: 5px;
+    font-size: 20px;
     font-weight: bold;
 }
-.search .iconsearch a:hover{
+.search  a:hover{
     color: aliceblue;
     font-weight: bolder;
 }
@@ -87,8 +83,15 @@
 .mr{
     margin-right: 20px;
 }
+.mb{
+    margin-bottom: 20px;
+}
+.boxspfisst{
+display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr;
+}
 .boxsp{
-    width: 15%;
+    float: left;
     border-radius: 5px;
     border: 5px gainsboro solid;
 }
@@ -99,6 +102,10 @@
     text-align: center;
     padding: 5px;
     font-size: 1vw;
+}
+.boxsp .namesp a{
+    text-decoration: none;
+    font-size: 20px;
 }
 .boxsp .pricesp{
     text-align: center;
@@ -137,7 +144,7 @@ font-weight: bolder;
     
 }
 .allboxsp .iconshow h1{
-    font-size: 1.3vw;
+    font-size:20px;
 }
 .allboxsp .iconshow a {
 text-decoration: none;
@@ -216,11 +223,11 @@ text-decoration: none;
     color: white;
 }
 .slideshow-container {
-    max-width: 1000px;
+    width: 100%;
+    /* max-width: 1000px; */
     position: relative;
-    margin: auto;
+    /* margin: auto; */
   }
-  
   /* Hide the images by default */
   .mySlides {
     display: none;
@@ -299,4 +306,117 @@ text-decoration: none;
     from {opacity: .4}
     to {opacity: 1}
   }
+ /* form chi tiết san phẩm */
+ .boxctsp{
+    width: 100%;
+ }
+.spct{
+    width: 100%;
+    position: relative;
+    height: 500px;
+}
+.spct .img{
+    float: left;
+    width: 30%;
+    height: 300px;
+    margin: 50px;
+}
+.spct .contentsp{
+    width: 60% ;
+    height:auto ;
+    position: absolute;
+    right: 0px;
+    margin: 20px;
+}
+.spct .contentsp h1{
+    text-align: center;
+    font-size: 30px;
+}
+.spct .contentsp .pricesp{
+    text-align: center;
+   
+}
+.spct .contentsp .motasp{
+    text-align: center;
+    
+}
+.formbl{
+    border: 2px;
+    width: 100%;
+   
+}
+.spct .btcart{
+    position: absolute;
+    bottom: 30px;
+    right: 200px;
+    border-radius: 20px red solid;
+}
+.spct .btcart input[type="button"]{
+    color: white;
+    background-color: red;
+    border: none;
+    font-size: 1vw;
+border-radius: 10px;
+border: white;
+height: 40px;
+font-weight: bolder;
+    margin-right: 20px;
+    
+}
+.spct .btcart input[type="button"]:hover{
+    opacity: 0.5;
+}
+.boxctsp .samesp{
+width: 100%;
+}
+/* tăng giảm số luowgnj trong bảng chi tiết */
+#tanggiam {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
+.slsp {
+    height: 30px;
+}
+.slsp input[type="text"]{
+    width: 50px;
+    border: none;
+}
+.sl{
+   width: 20%;
+}
+
+.mr {
+    margin-right: 20px;
+}
+#tanggiam button {
+    width: 35px;
+    height: 35px;
+    outline: none;
+    border: 1px solid #ececec;
+    background: none;
+    cursor: pointer;
+}
+
+#tanggiam button:hover {
+    background-color: #ececec;
+}
+
+#tanggiam button svg {
+    color: #ececec;
+}
+
+#tanggiam button svg:hover {
+    color: #4f4f4f;
+}
+#tanggiam #soluong{
+    background-color: white;
+}
+
+#tanggiam #amount {
+    width: 40px;
+    height: 35px;
+    text-align: center;
+    border: 1px solid #ececec;
+}

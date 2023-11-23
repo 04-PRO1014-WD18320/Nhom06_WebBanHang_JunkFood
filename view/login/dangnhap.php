@@ -4,20 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../Nhom06_WebBanHang_JunkFood/view/css/du.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="../css/du.css">
 </head>
 <body>
     <div class="wrapper">
-        <form action="">
+        <form action="../../index.php?act=dangnhap" method="post">
             <h1>Login</h1>
             <div class="input-box">
-                <input type="text" placeholder="Username"
+                <input type="text" name="user" placeholder="Username"
                 required>
                 <i class='bx bxs-user' ></i>
             </div>
             <div class="input-box">
-                <input type="password"
+                <input type="password" name="pass"
                 placeholder="password" required>
                 <i class='bx bxs-lock-alt' ></i>
             </div>
@@ -27,12 +27,14 @@
                 <a href="#">Forgot passwork?</a>
             </div>
 
-            <button type="submit" class="btn-login">Login</button>
+            <input type="submit" class="btn-login" name="dangnhap" value="Đăng Nhập">
             
             <div class="register-link">
-                <p> Don't have account? <a href="#">Register</a></p>
+                <p> Don't have account? <a href="dangky.php">Register</a></p>
             </div>
+            
         </form>
+        
     </div>
 </body>
 </html>

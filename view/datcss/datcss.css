@@ -220,7 +220,6 @@ text-decoration: none;
     position: relative;
     margin: auto;
   }
-  
   /* Hide the images by default */
   .mySlides {
     display: none;
@@ -299,4 +298,66 @@ text-decoration: none;
     from {opacity: .4}
     to {opacity: 1}
   }
+/*  */
+.frmtitle{
+    background-color: #eee;
+    border: 1px #ccc solid;
+    font-size: 1vw;
+    color: #666;
+    border-radius: 5px;
+    padding: 0px 20px;  
+}
+.frmcontent{
+    padding: 20px 0px;
 
+}
+/* danh sach loai hang */
+.frmdsloai table{
+  width: 100%;
+  border-collapse: collapse;
+ 
+}
+.frmdsloai table th{
+   
+    padding: 20px;
+    background-color: #ccc;
+}
+.row{
+    float: left;
+    width: 100%;
+}
+.mb10{
+    margin-bottom: 10px;
+}
+.frmcontent input[type="text"],
+.frmcontent input[type="number"]{
+    width: 100%;
+    border: 1px #ccc solid;
+    padding:5px 10px;
+    border-radius: 5px;
+}
+.formtaikhoan input[type="checkbox"]{
+    border-radius: 5px;
+}
+.formtaikhoan input[type="submit"],
+.frmcontent input[type="submit"],
+.formtaikhoan input[type="reset"],
+.frmcontent input[type="reset"],
+.frmcontent input[type="button"]{
+    border-radius: 5px;
+    padding: 5px 10px;
+    background-color: white;
+    border: 1px #ccc solid ;
+}
+.formtaikhoan input[type="submit"]:hover,
+.frmcontent input[type="submit"]:hover,
+.frmcontent input[type="reset"]:hover,
+.frmcontent input[type="button"]:hover{
+  
+    background-color: #ccc;
+    
+}
+.frmdsloai table td{
+    padding: 10px 20px;
+    border: 1px #ccc solid;
+}
