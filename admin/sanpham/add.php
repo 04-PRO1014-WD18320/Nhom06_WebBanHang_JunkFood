@@ -39,12 +39,13 @@
                         trang thai <br>
                         <input type="number" name="trangthai" id=""> -->
                     </div>
-                     <div class="row mb10">
+                    <div class="row mb10">
                         <input type="submit" name="themmoi" value="THÊM MỚI">
                         <input type="reset" value="NHẬP LẠI">
-                        <a href="index.php?act=lissp"><input type="button" value="DANH SÁCH"></a>
+                        <a href="index.php?act=lisdm"><input type="button" value="DANH SÁCH"></a>
 
                      </div>
+                     
                      <?php 
                      if(isset($thongbao)&&($thongbao!=""))
                      echo $thongbao

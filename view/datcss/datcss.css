@@ -300,6 +300,7 @@ text-decoration: none;
   }
 /*  */
 .frmtitle{
+    margin-top: 15px;
     background-color: #eee;
     border: 1px #ccc solid;
     font-size: 1vw;
@@ -330,7 +331,8 @@ text-decoration: none;
     margin-bottom: 10px;
 }
 .frmcontent input[type="text"],
-.frmcontent input[type="number"]{
+.frmcontent input[type="number"],
+.frmcontent textarea{
     width: 100%;
     border: 1px #ccc solid;
     padding:5px 10px;
@@ -339,9 +341,8 @@ text-decoration: none;
 .formtaikhoan input[type="checkbox"]{
     border-radius: 5px;
 }
-.formtaikhoan input[type="submit"],
+
 .frmcontent input[type="submit"],
-.formtaikhoan input[type="reset"],
 .frmcontent input[type="reset"],
 .frmcontent input[type="button"]{
     border-radius: 5px;
@@ -349,7 +350,24 @@ text-decoration: none;
     background-color: white;
     border: 1px #ccc solid ;
 }
-.formtaikhoan input[type="submit"]:hover,
+
+ input[type="submit"],
+ input[type="reset"],
+ input[type="button"]{
+    border-radius: 5px;
+    padding: 5px 10px;
+    background-color: white;
+    border: 1px #ccc solid ;
+}
+
+ input[type="submit"]:hover,
+ input[type="reset"]:hover,
+ input[type="button"]:hover{
+  
+    background-color: #ccc;
+    
+}
+
 .frmcontent input[type="submit"]:hover,
 .frmcontent input[type="reset"]:hover,
 .frmcontent input[type="button"]:hover{
