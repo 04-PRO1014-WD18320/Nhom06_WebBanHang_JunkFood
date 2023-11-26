@@ -24,7 +24,7 @@
             <div class="remember-forgot">
                 <label for=""><input type="checkbox"> Remember me
                 </label>
-                <a href="#">Forgot passwork?</a>
+                <a href="quenmk.php">Forgot passwork?</a>
             </div>
 
             <input type="submit" class="btn-login" name="dangnhap" value="Đăng Nhập">
