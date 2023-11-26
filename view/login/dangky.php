@@ -6,6 +6,7 @@
     <title>Document</title>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="../css/du.css">
+    <link rel="stylesheet" href="./view/css/du.css">
 </head>
 <body>
     <div class="wrapper">
@@ -40,7 +41,7 @@
           <input type="submit" value="Đăng Ký" name="dangky" class="btn-login">
 
             <div class="register-link">
-                <p> Do you already have an account! <a href="dangnhap.php">Login</a></p>
+                <p> Do you already have an account! <a href="view/login/dangnhap.php">Login</a></p>
             </div>
         </form>
         <?php

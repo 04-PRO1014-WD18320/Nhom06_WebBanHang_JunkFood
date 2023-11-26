@@ -7,6 +7,7 @@
     <script src="./icons/fontawesome-free-6.4.2-web/js/all.min.js"></script>
     <link rel="stylesheet" href="./longcss/styles.css">
     <link rel="stylesheet" href="../view/datcss/datcss.css">
+    <link rel="stylesheet" href="../admin/css/style.css">
 </head>
 <body>
     <div class="container">
@@ -21,7 +22,9 @@
                 <li><a href="index.php?act=addsp">SẢN PHẨM</a></li>
                 <li><a href="index.php?act=dskh">KHÁCH HÀNG</a></li>
                 <li><a href="index.php?act=dsbl">BÌNH LUẬN</a></li>
+                <li><a href="index.php?act=dsdh">Đơn Hàng</a></li>
                 <li><a href="index.php?act=thongke">THỐNG KÊ</a></li>
+                <li><a href="../view/login/dangnhap.php">Logout</a></li>
                 </ul>
             </div>
             <div class="search">
