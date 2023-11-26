@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="../css/du.css">
+    <link rel="stylesheet" href="./view/css/du.css">
     <style>
         .click{
             cursor: pointer;
@@ -18,11 +18,12 @@
 <body>
     <div class="wrapper">
         <?php
-            if(isset($_SESSION['user'])&&(is_array($_SESSION['user']))){
+            if(isset($_SESSION['user'])){
                 extract($_SESSION['user']);
+               
             }
         ?>
-        <form action="../../index.php?act=edit_taikhoan" method="post">
+        <form action="index.php?act=edit_taikhoan" method="post">
             <h1>Login</h1>
             <div class="input-box">
             <p>Email</p>
