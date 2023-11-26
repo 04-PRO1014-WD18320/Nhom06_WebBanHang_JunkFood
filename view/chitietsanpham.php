@@ -1,6 +1,7 @@
 <?php
 extract($listspct);
 $hinh = "upload/" . $img;
+$linkdh="index.php?act=donhang&idsp=".$id;
 echo '
     <div class="spct">
     <div class="img">
@@ -29,11 +30,11 @@ echo '
             <form action="">
             <div class="btcart mt10">
                 <input type="button" value="Thêm vào giỏ hàng">
-                <input type="button" value="Mua ngay">
+                <a href="'.$linkdh.'"><input type="button" name="addtocard" value="Mua ngay"></a>
             </div>
             </form>
             
-        </div>';
+     </div>';
 ?>
 <div class="formbl mt10">
     <h3>Bình luận</h3>
@@ -66,7 +67,7 @@ echo '
 <input type="hidden" name="name" value="' . $name . '">
 <input type="hidden" name="img" value="' . $img . '">
 <input type="hidden" name="price" value="' . $price . '">
-<input type="button" name="addtocard" value="Mua ngay">
+<a href=""index.php?act=donhang&idsp=" . $id"><input type="button" name="addtocard" value="Mua ngay"></a>
 </div>
 </form>
 </div>
@@ -76,6 +77,7 @@ echo '
     </div>
 
 </div>
+<a href=""></a>
 <script>
     let element = document.getElementById("amount");
     let amount = Number(element.value);

@@ -3,7 +3,8 @@ include "../mdel/pdo.php";
 include "header.php";
 include "../mdel/danhmuc.php";
 include "../mdel/sanpham.php";
-// include "../model/taikhoan.php";
+include "../mdel/taikhoan.php";
+include "../mdel/donhang.php";
 // include "../model/binhluan.php";
 // include "../model/cart.php";
 
@@ -130,7 +131,43 @@ if (isset($_GET['act'])) {
             $listsanpham = loadall_sanpham("", 0);
             include "sanpham/list.php";
             break;
+            case "xoatk":
+                if (isset($_GET["id"]) && ($_GET["id"] > 0)) {
+                    delete_tk($_GET["id"]);
+                }
+                $listtaikhoan = loadall_taikhoan();
+                include "taikhoan/list.php";
+                break;
+            case 'dskh':
+                $listtaikhoan=loadall_taikhoan();
+                include "taikhoan/list.php";
+                break;
 
+
+            case 'donhang':
+                $cart = get_all_cart();
+                renderAD('donhang/list',['list' => $cart]);
+                break;
+            case 'edit_cart':
+                if(isset($_GET['id_cart'])){
+                    $cart = get_cart_by_id($_GET['id_cart']);
+                    renderAD('donhang/update',['cart'=>$cart]);
+                }
+                break;
+            case 'update_cart':
+                if(isset($_POST['capnhat'])){
+                    $role = $_POST['status'];
+                    $cart_id = $_POST['cart_id'];
+                    update_cart($role,$cart_id);
+                    echo "<script>alert('Cập nhật thành công!');window.location='index.php?act=donhang'</script>";
+                }
+                break;
+            case 'detail_cart':
+                if(isset($_GET['id_cart'])){
+                    $cart = get_cart_by_id($_GET['id_cart']);
+                    renderAD('don_hang/detail',['cart'=>$cart]);
+                }
+                break;
         // case 'dskh':
 
         //     $listtaikhoan =  loadall_taikhoan();
@@ -152,13 +189,18 @@ if (isset($_GET['act'])) {
         //         $listthongke =  loadall_thongke();
         //         include "thongke/bieudo.php";
         //         break;
+        case 'thoat':
+            unset($_SESSION['user']);
+            header('Location: index.php');
+            // include_once "index.php";
+            break;
         default:
             include "home.php";
             break;
     }
 } else {
-    // include "home.php";
+    include "home.php";
 }
-// include "home.php";
+include "home.php";
 
 
