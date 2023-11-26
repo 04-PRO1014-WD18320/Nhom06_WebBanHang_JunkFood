@@ -23,6 +23,17 @@ if ((isset($_GET['act'])) && ($_GET['act'] != "")) {
                 include "view/home.php";
             }
             break;
+            case "donhang":
+                if(isset($_GET["idsp"])&& ($_GET["idsp"])>0){
+                    $listspct= loadone_sanpham($_GET["idsp"]);
+                    extract($listspct);
+                    
+                    include "view/donhang.php";
+                }else{
+                    echo "Lỗi to đùng";
+                    include "view/home.php";
+                }
+                break;
         case 'dangky':
             if(isset($_POST['dangky'])&&($_POST['dangky'])){
                 $email=$_POST['email'];
