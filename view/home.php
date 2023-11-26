@@ -1,3 +1,18 @@
+<?php
+    if(isset($_SESSION['user'])){
+        extract($_SESSION['user']);
+?>
+    <?php
+    if($role==1){
+        header('location: admin/index.php');
+        ?>
+        <?php
+            }else{
+        ?>
+   
+   <?php }?>  
+    <?php } ?>
+
 <div class="banner mt">
             <div class="banner">
                 <!-- Slideshow container -->
@@ -150,3 +165,4 @@
         </div>
 
     </div>
+   

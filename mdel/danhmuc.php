@@ -24,4 +24,10 @@ function update_danhmuc($id,$namedm){
     $sql = "update danhmuc set namedm='".$namedm."' where id=".$id;
                 pdo_execute($sql);
 }
+function renderAD($path, $data = [])
+{
+    extract($data);
+    $view = "../admin/" . $path . ".php";
+    include_once $view;
+}
 ?>
