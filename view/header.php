@@ -43,7 +43,7 @@
                     ?>
                     <a href="view/login/dangnhap.php"><i class="fa-solid fa-user"></i></a>
                 <?php } ?>
-                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                <a href="index.php?act=giohang"><i class="fa-solid fa-cart-shopping"></i></a>
             </div>
             </form>
 

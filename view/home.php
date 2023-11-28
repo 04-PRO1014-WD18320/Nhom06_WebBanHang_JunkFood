@@ -87,7 +87,7 @@
     
     <div class="iconshow mt">
         <a href="">
-            <h1>Một số sản phẩm bán chạy</h1>
+        <h1>Một số sản phẩm bán chạy</h1>
         </a>
     </div>
     <div class="boxspfisst mt">
@@ -113,7 +113,7 @@
     <input type="hidden" name="name" value="'.$name.'">
     <input type="hidden" name="img" value="'.$img.'">
     <input type="hidden" name="price" value="'.$price.'">
-    <input type="button" name="addtocard" value="Mua ngay">
+    <input type="submit" name="addtocard" value="Mua ngay">
 </div>
     </form>
     </div>
@@ -151,7 +151,7 @@
     <input type="hidden" name="name" value="'.$name.'">
     <input type="hidden" name="img" value="'.$img.'">
     <input type="hidden" name="price" value="'.$price.'">
-    <input type="button" name="addtocard" value="Mua ngay">
+    <input type="submit" name="addtocard" value="Mua ngay">
 </div>
     </form>
     </div>
