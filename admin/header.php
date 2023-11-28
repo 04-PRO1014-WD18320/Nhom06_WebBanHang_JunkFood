@@ -24,6 +24,7 @@
                 <li><a href="index.php?act=dsbl">BÌNH LUẬN</a></li>
                 <li><a href="index.php?act=dsdh">Đơn Hàng</a></li>
                 <li><a href="index.php?act=thongke">THỐNG KÊ</a></li>
+                <li><a href="../view/login/dangnhap.php">Logout</a></li>
                 </ul>
             </div>
             <div class="search">

@@ -44,7 +44,7 @@ if ((isset($_GET['act'])) && ($_GET['act'] != "")) {
                 insert_taikhoan($email,$user,$pass,$tel,$address); 
             }
             $thongbao="Đăng Ký Thành Công";
-            // include "view/login/dangky.php";
+            include "view/login/dangky.php";
             break;
         // case 'dangnhap':
         //     if(isset($_POST['dangnhap'])&&($_POST['dangnhap'])){
@@ -90,6 +90,7 @@ if ((isset($_GET['act'])) && ($_GET['act'] != "")) {
                         $thongbao="email nay ko ton tai";
                     }
                 }
+                // header('Location: view/login/quenmk.php');
                 include "view/login/quenmk.php";
                 break;
         case 'edit_taikhoan':
@@ -100,10 +101,12 @@ if ((isset($_GET['act'])) && ($_GET['act'] != "")) {
                     $address=$_POST['address'];
                     $tel=$_POST['tel'];
                     $id=$_POST['id'];
-
                     update_taikhoan($id,$user,$pass,$email,$address,$tel);
-                    $_SESSION['user']=checkuser($user,$pass);
+                    $checkuser=checkuser($user,$pass);
+                    if(is_array($checkuser)){
+                        $_SESSION['user']=$checkuser;
                     header('Location: index.php?act=edit_taikhoan');
+                    }
                 }
                 include "view/login/edit_taikhoan.php";
                 break;

@@ -7,7 +7,7 @@
     <title>Document</title>
     <script src="./icons/fontawesome-free-6.4.2-web/js/all.min.js"></script>
     <link rel="stylesheet" href="view/longcss/styles.css">
-  
+
 </head>
 
 <body>
@@ -29,12 +29,13 @@
                 <form action="" method="post">
                     <input type="text" placeholder="Search">
                     <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+                    <a href=""></a>
             </div>
             <div class="icons">
                 <?php
                 if(isset($_SESSION['user'])){
                     extract($_SESSION['user']);
-                    echo '<a href="view/login/edit_taikhoan.php">'.$user.'</a>
+                    echo '  <a href="view/login/edit_taikhoan.php"><a href="index.php?act=edit_taikhoan">'.$user.'</a></a>
                     <a href="index.php?act=thoat">thoat</a>';
                     
                 } else {
@@ -48,5 +49,5 @@
 
         </div>
         <div class="banner mt">
-           
+
         </div>
