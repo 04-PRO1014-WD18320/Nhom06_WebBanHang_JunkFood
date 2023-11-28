@@ -1,6 +1,5 @@
 <?php
 session_start();
-include "view/header.php";
 ob_start();
 include "mdel/pdo.php";
 include "mdel/danhmuc.php";
@@ -8,6 +7,7 @@ include "mdel/sanpham.php";
 include "mdel/taikhoan.php";
 include "mdel/cart.php";
 include "mdel/giohang.php";
+include "view/header.php";
 $listsp=loadall_sanpham_home();
 $listspmin=loadall_sanpham_soluongmin();
 if ((isset($_GET['act'])) && ($_GET['act'] != "")) {
@@ -24,6 +24,17 @@ if ((isset($_GET['act'])) && ($_GET['act'] != "")) {
                 include "view/home.php";
             }
             break;
+        case "donhang":
+                if(isset($_GET["idsp"])&& ($_GET["idsp"])>0){
+                    $listspct= loadone_sanpham($_GET["idsp"]);
+                    extract($listspct);
+                    
+                    include "view/donhang.php";
+                }else{
+                    echo "Lỗi to đùng";
+                    include "view/home.php";
+                }
+            break;
         case 'dangky':
             if(isset($_POST['dangky'])&&($_POST['dangky'])){
                 $email=$_POST['email'];
@@ -34,9 +45,9 @@ if ((isset($_GET['act'])) && ($_GET['act'] != "")) {
                 insert_taikhoan($email,$user,$pass,$tel,$address); 
             }
             $thongbao="Đăng Ký Thành Công";
-            // include "view/login/dangky.php";
+            include "view/login/dangky.php";
             break;
-            case 'dangnhap':
+        case 'dangnhap':
                 if(isset($_POST['dangnhap'])&&($_POST['dangnhap'])){
                     $user=$_POST['user'];
                     $pass=$_POST['pass'];
@@ -52,6 +63,7 @@ if ((isset($_GET['act'])) && ($_GET['act'] != "")) {
                 
                 // include "view/login/dangky.php";
                 break;
+
         case 'thoat':
                unset($_SESSION['user']);
                 header('Location: index.php');
@@ -98,6 +110,38 @@ if ((isset($_GET['act'])) && ($_GET['act'] != "")) {
                             unset($check);
                             }
 
+
+        case 'quenmk':
+                if(isset($_POST['guiemail'])&&($_POST['guiemail'])){
+                    $email=$_POST['email'];
+
+                    $checkemail=checkemail($email);
+                    if(is_array($checkemail)){
+                        $thongbao="Mat Khau Cua Ban la: ".$checkemail['pass'];
+                    }else{
+                        $thongbao="email nay ko ton tai";
+                    }
+                }
+                // header('Location: view/login/quenmk.php');
+                include "view/login/quenmk.php";
+                break;
+        case 'edit_taikhoan':
+                if(isset($_POST['capnhat'])&&($_POST['capnhat'])){
+                    $user=$_POST['user'];
+                    $pass=$_POST['pass'];
+                    $email=$_POST['email'];
+                    $address=$_POST['address'];
+                    $tel=$_POST['tel'];
+                    $id=$_POST['id'];
+                    update_taikhoan($id,$user,$pass,$email,$address,$tel);
+                    $checkuser=checkuser($user,$pass);
+                    if(is_array($checkuser)){
+                        $_SESSION['user']=$checkuser;
+                    header('Location: index.php?act=edit_taikhoan');
+                    }
+                }
+                include "view/login/edit_taikhoan.php";
+                break;
         default:
             break;
     }
