@@ -43,27 +43,7 @@ echo '
           </form>
           </div>
           </div>
-                <div id="tanggiam">
-        <div class="sl mr">
-            <p>Số lượng</p>
-        </div>
-        <button class="minus" onclick="handelminus()"><i class="fa-solid fa-minus"></i></button>
-        <input type="text" name="amount" id="amount" value="1">
-        <button class="plus mr" onclick="handelplus()"><i class="fa-solid fa-plus "></i></button>
-        <div class="slsp">
-        <input type="text" id="soluong" value="' . $soluong . '" placeholder="sản phẩm" disabled>
-        </div>
-    </div>
-            </div>
-            <form action="">
-            <div class="btcart mt10">
-                <input type="button" value="Thêm vào giỏ hàng">
-                <a href="'.$linkdh.'"><input type="button" name="addtocard" value="Mua ngay"></a>
-            </div>
-            </form>
-            
-     </div>';
-?>
+               
 <div class="formbl mt10">
     <h3>Bình luận</h3>
     <hr>
@@ -87,7 +67,7 @@ echo '
 <a href="' . $linksp . '">' . $name . '</a>
 </div>
 <div class="pricesp">
-<p> ' . $price . '</p>
+<p> '.number_format($price)."VNĐ".'</p>
 </div>
 <form action="">
 <div class="muasp">

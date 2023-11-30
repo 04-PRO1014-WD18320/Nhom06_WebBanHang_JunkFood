@@ -105,7 +105,7 @@
     <a href="'.$linksp.'">'.$name.'</a>
     </div>
     <div class="pricesp">
-     <p> '.$price.'</p>
+     <p> '.number_format($price)."VNĐ".'</p>
     </div>
     <form action="">
     <div class="muasp">
@@ -143,7 +143,7 @@
     <a href="'.$linksp.'">'.$name.'</a>
     </div>
     <div class="pricesp">
-     <p> '.$price.'</p>
+     <p> '.number_format($price)."VNĐ".'</p>
     </div>
     <form action="">
     <div class="muasp">

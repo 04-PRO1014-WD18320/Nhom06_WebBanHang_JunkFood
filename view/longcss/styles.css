@@ -478,3 +478,83 @@ a{
     width: 60%;
     right: 50px;
 }
+/* làm css về đơn hàng */
+.formtk input[type="password"],
+.formtk input[type="email"],
+.formtk input[type="text"] {
+    width: 100%;
+    border: 1px #CCC solid;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.formtk input[type="checkbox"] {
+    border-radius: 5px;
+
+}
+.formtk1 input[type="submit"]{
+    background-color: blueviolet;
+    border: 1px #CCC solid;
+    padding: 5px 10px;
+    border-radius: 5px;
+    width:40%;
+    height:60px;
+    font-weight:bold;
+}
+.formtk1 input[type="submit"]:hover {
+    background-color: #CCC;
+}
+
+.formtk input[type="submit"], 
+.formtk input[type="reset"], 
+.formcontent input[type="submit"],
+.formcontent input[type="reset"],
+.formcontent input[type="button"]{
+    background-color: white;
+    border: 1px #CCC solid;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+.formcontent input[type="submit"]:hover,
+.formtk input[type="reset"]:hover,
+.formcontent input[type="reset"]:hover,
+.formcontent input[type="button"]:hover,
+.formtk input[type="submit"]:hover {
+    background-color: #CCC;
+}
+
+.formtk li a {
+    color: red;
+    text-decoration: none;
+}
+
+.formtk li a:hover {
+    color: blue;
+    text-decoration: underline;
+}
+.mb50{
+    margin-bottom: 50px;
+}
+/* .dathang{
+    text-align: center;
+} */
+.boxoder{
+    width: 100%;
+text-align: center;
+background-color: white;
+    border: 1px #CCC solid;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+.boxoder table{
+    border-spacing: 40px;
+    width: 100%;
+
+}
+.boxmybill{
+    display: grid;
+    grid-template-columns: 60% 30%;
+    grid-gap:10%;
+
+
+}

@@ -8,6 +8,11 @@ function check_giohang($iduser, $idsp) {
     $sql = "SELECT * FROM giohang WHERE idsanpham = ? AND iduser = ?";
     return pdo_query_one($sql, $idsp, $iduser);
 }
+
+function check_giohang1($iduser, $idsp) {
+    $sql = "SELECT * FROM giohang WHERE idsanpham = ? AND iduser = ?";
+    return pdo_query_one($sql, $idsp, $iduser);
+}
 function delete_giohang($id){
     $sql = "delete from giohang where id=".$id;
     pdo_query($sql);

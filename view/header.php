@@ -14,7 +14,7 @@
     <div class="container">
         <div class="header">
             <div class="logo">
-                <img src="./images/logo.jpg" width="80" height="80" alt="">
+               <a href="index.php"> <img src="./images/logo.jpg" width="80" height="80" alt=""></a>
             </div>
             <div class="menu">
                 <ul>
