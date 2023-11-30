@@ -36,8 +36,15 @@ echo '
             
      </div>';
 ?>
-<div class="formbl mt10">
+
+<div class="formbl mt10" id="binhluan">
     <h3>Bình luận</h3>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#binhluan").load("view/binhluan/binhluan.php", {idpro: <?=$id?>});
+            });
+    </script>
     <hr>
 </div>
 <div class="samesp mt10">

@@ -5,13 +5,32 @@ include "mdel/pdo.php";
 include "mdel/danhmuc.php";
 include "mdel/sanpham.php";
 include "mdel/taikhoan.php";
+include "mdel/binhluan.php";
 include "view/header.php";
+include "global.php";
 
 $listsp=loadall_sanpham_home();
 $listspmin=loadall_sanpham_soluongmin();
 if ((isset($_GET['act'])) && ($_GET['act'] != "")) {
     $act = $_GET['act'];
     switch ($act) {
+        case 'sanpham':
+                if(isset($_POST['kyw'])&&($_POST['kyw']!="")){
+                    $kyw=$_POST['kyw'];
+
+                }else{
+                    $kyw="";
+                }
+                if(isset($_GET['iddm'])&&($_GET['iddm']>0)){
+                    $iddm=$_GET['iddm'];
+                    
+                }else{
+                    $iddm=0;
+                }
+                    $dssp=loadall_sanpham($kyw,$iddm);
+                    $tendm=loadone_ten_dm($iddm);
+                    include "view/sanpham.php";
+                break;
         case "sanphamchitiet":
             if(isset($_GET["idsp"])&& ($_GET["idsp"])>0){
                 $listspct= loadone_sanpham($_GET["idsp"]);

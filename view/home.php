@@ -20,21 +20,21 @@
 
                 <!-- Full-width images with number and caption text -->
                 <div class="mySlides fade">
-                <div class="numbertext">1 / 3</div>
+                <div class="numbertext"></div>
                 <img src="./images/doanvat1.jpg" width="100%" height="400px">
-                <div class="text">Caption Text</div>
+                <div class="text"></div>
                 </div>
 
                 <div class="mySlides fade">
-                <div class="numbertext">2 / 3</div>
+                <div class="numbertext"></div>
                 <img src="./images/doanvat2.jpg" width="100%"  height="400px">
-                <div class="text">Caption Two</div>
+                <div class="text"></div>
                 </div>
 
                 <div class="mySlides fade">
-                <div class="numbertext">3 / 3</div>
+                <div class="numbertext"></div>
                 <img src="./images/doanvat3.jpg"  width="100%"  height="400px">
-                <div class="text">Caption Three</div>
+                <div class="text"></div>
                 </div>
 
                 <!-- Next and previous buttons -->
@@ -98,7 +98,7 @@
         $hinh="upload/".$img;
     $linksp="index.php?act=sanphamchitiet&idsp=".$id;
     echo '
-    <div class="boxsp mt">
+    <div class="boxsp mt mr1">
     <a href="'.$linksp.'"><img src="'.$hinh.'" width="100%" height="150px" alt=""></a>
 
     <div class="namesp">
@@ -136,7 +136,7 @@
         $hinh="upload/".$img;
     $linksp="index.php?act=sanphamchitiet&idsp=".$id;
     echo '
-    <div class="boxsp mt">
+    <div class="boxsp mt mr1">
     <a href="'.$linksp.'"><img src="'.$hinh.'" width="100%" height="150px" alt=""></a>
 
     <div class="namesp">
@@ -151,7 +151,7 @@
     <input type="hidden" name="name" value="'.$name.'">
     <input type="hidden" name="img" value="'.$img.'">
     <input type="hidden" name="price" value="'.$price.'">
-    <input type="button" name="addtocard" value="Mua ngay">
+    <input type="submit" name="addtocard" value="Mua ngay">
 </div>
     </form>
     </div>

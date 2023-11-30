@@ -74,3 +74,14 @@ function update_sanpham($iddm,$id,$tensp,$giasp,$mota,$hinh,$soluong){
         $sql="update sanpham set iddm='".$iddm."', name='".$tensp."', price='".$giasp."', mota='".$mota."' where id=".$id;
     pdo_execute($sql);
 }
+function loadone_ten_dm($iddm){
+    if($iddm>0){
+    $sql="select * from danhmuc where id=".$iddm;
+    $dm=pdo_query_one($sql);
+    extract($dm);
+    return $name;
+    }else{
+        return "";
+    }
+}
+?>
