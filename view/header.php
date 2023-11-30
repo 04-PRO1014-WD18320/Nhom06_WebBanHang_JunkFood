@@ -7,6 +7,7 @@
     <title>Document</title>
     <script src="./icons/fontawesome-free-6.4.2-web/js/all.min.js"></script>
     <link rel="stylesheet" href="view/longcss/styles.css">
+
     <link rel="stylesheet" href="./css/du.css">
     <link rel="stylesheet" href="./css/style.css">
     <style>
@@ -25,6 +26,7 @@
             margin-right: 20px;
         }
     </style>
+
 </head>
 
 <body>
@@ -67,5 +69,5 @@
 
         </div>
         <div class="banner mt">
-            
+
         </div>

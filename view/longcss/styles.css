@@ -441,3 +441,10 @@ width: 100%;
     text-align: center;
     border: 1px solid #ececec;
 }
+
+/* dat css */
+.thanhtoan{
+    border:2px solid red;
+    padding: 12px;
+    margin-top: 32px;
+}
