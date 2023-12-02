@@ -160,7 +160,7 @@ if ((isset($_GET['act'])) && ($_GET['act'] != "")) {
                 $phone = $_POST['tel'];
                 $address = $_POST['address'];
                 $note = $_POST['note'];
-                $pttt=0;
+                $pttt=$_POST['pttt'];
                 $date=DATE('h:i:sa d/m/Y');
                 $idbill =insert_donhang($name,$phone,$address,$note,$pttt,$date);
                 if (isset($_SESSION['user']['id'])) {
@@ -175,10 +175,8 @@ if ((isset($_GET['act'])) && ($_GET['act'] != "")) {
                        $thanhtien=$soluong1*$price1;
                        $date1=DATE('h:i:sa d/m/Y');
                         insert_donhang_sp($idbill ,$tensp,$img,$soluong1,$price1,$thanhtien,$date1);
-                       
                     }
                 }
-                include "view/cart/donhangthanhcong.php";
             }
             break;
 

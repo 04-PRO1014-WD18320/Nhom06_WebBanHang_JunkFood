@@ -97,6 +97,8 @@ grid-template-columns: 1fr 1fr 1fr 1fr;
     float: left;
     border-radius: 5px;
     border: 5px gainsboro solid;
+    position: relative;
+    height: 300px;
 }
 .boxsp img{
     padding: 5px;
@@ -105,6 +107,7 @@ grid-template-columns: 1fr 1fr 1fr 1fr;
     text-align: center;
     padding: 5px;
     font-size: 1vw;
+    color: black;
 }
 .boxsp .namesp a{
     text-decoration: none;
@@ -120,6 +123,9 @@ grid-template-columns: 1fr 1fr 1fr 1fr;
     padding: 5px;
     border-radius: 10px;
     border: white;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
   
 }
 .boxsp .muasp input[type="submit"]{
@@ -132,6 +138,9 @@ border-radius: 10px;
 border: white;
 height: 30px;
 font-weight: bolder;
+}
+.boxsp p{
+    text-align: center;
 }
 .mt10{
     margin-top: 10px;
@@ -557,4 +566,7 @@ background-color: white;
     grid-gap:10%;
 
 
+}
+p{
+    padding: 5px;
 }

@@ -23,7 +23,18 @@
 
                        </textarea>
                     </div>
-
+                    <div class="  "> <h4>Phương thức thanh toán</h4></div>
+        <div class="    ">
+        <table>
+            <tr>
+                <td><input type="radio" name="pttt" value="0" >Trả tiền khi nhận hàng</td>
+                <td><input type="radio" name="pttt" value="1" >Chuyển khoản ngân hàng</td>
+                <td><input type="radio" name="pttt" value="2">Thanh toán online</td>
+            </tr>
+        </table>
+        </div>
+        
+    </div>
               
                <h2 class="thongbao">
                
@@ -31,7 +42,7 @@
             </div>
         </div>
     </div>
-</div>
+
 <div class="boxoder formtk1  ">
 <div class="boxtitle  "><h2>Đơn hàng</h2> </div>
     <table >
@@ -70,7 +81,7 @@
     <input type="submit" value="Đặt hàng" name="dathang">
                     </div>
     
-        
+                    </form>
 </div>
 </div>
-</form>
+</div>

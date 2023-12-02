@@ -48,9 +48,9 @@ function insert_donhang($name,$phone,$address,$note,$pttt,$date) {
     VALUES ('$name','$phone','$address','$note','$pttt','$date') ";
     return pdo_execute($sql );
 }
-function insert_donhang_sp($idbill ,$tensp,$img,$soluong1,$price1,$thanhtien,$date1) {
+function insert_donhang_sp($idbill ,$tensp,$img,$soluong1,$price1,$thanhtien,$date) {
     $sql = "INSERT INTO order_detail1(order_id ,tensp,img,soluong,price,thanhtien,created_at)
-     VALUES ('$idbill','$tensp','$img','$soluong1','$price1','$thanhtien','$date1') ";
+     VALUES ('$idbill','$tensp','$img','$soluong1','$price1','$thanhtien','$date') ";
     pdo_execute($sql );
 }
 ?>

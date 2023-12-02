@@ -32,7 +32,7 @@
                 <a href="index.php?act=check"><td> <input type="checkbox" name="check" id=""> </td></a>
                 <td><img src="<?=$hinh?>" alt="" height="80px"></td>
                 <td><?=$name?></td>
-                <td><?=$price?></td>
+                <td><?=number_format($price)."VNĐ"?></td>
                 <td><?=$soluong?></td>
                 <td><?=number_format($ttien)."VNĐ"?></td>
                 <td> <a href="index.php?act=xoagiohang&idgiohang=<?=$id?> "onclick="return confirm('Bạn muốn xóa sản phẩm này?')">   Xóa  </a></td>

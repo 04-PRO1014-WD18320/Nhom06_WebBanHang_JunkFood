@@ -12,7 +12,7 @@ echo '
             <div class="contentsp mt10">
                 <h1>' . $name . '</h1>
                 <div class="pricesp mt10">
-                <p>' . $price . '</p>
+                <p>' . number_format($price)."VNĐ". '</p>
                 </div>
                 <div class="motasp mt10">
                 <p>' . $mota . '</p>
@@ -75,7 +75,7 @@ echo '
 <input type="hidden" name="name" value="' . $name . '">
 <input type="hidden" name="img" value="' . $img . '">
 <input type="hidden" name="price" value="' . $price . '">
-<a href=""index.php?act=donhang&idsp=" . $id"><input type="button" name="addtocard" value="Mua ngay"></a>
+<a href=""index.php?act=donhang&idsp=" . $id"><input type="submit" name="addtocard" value="Mua ngay"></a>
 </div>
 </form>
 </div>
