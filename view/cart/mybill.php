@@ -62,7 +62,10 @@
             <td><?=$name?></td>
             <td><?=number_format($ttien)."VNĐ"?></td>
         </tr>
-        
+        <tr class="mr">
+            <td>Phí vận chuyển</td>
+            <td><?=number_format(20000)."VNĐ"?></td>
+        </tr>
         <?php
   }
 }
