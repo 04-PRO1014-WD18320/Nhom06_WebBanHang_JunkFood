@@ -6,6 +6,7 @@ include "mdel/danhmuc.php";
 include "mdel/sanpham.php";
 include "mdel/taikhoan.php";
 include "view/header.php";
+include "mdel/donhang.php";
 
 $listsp=loadall_sanpham_home();
 $listspmin=loadall_sanpham_soluongmin();
@@ -24,10 +25,11 @@ if ((isset($_GET['act'])) && ($_GET['act'] != "")) {
             }
             break;
         case "donhang":
-                if(isset($_GET["idsp"])&& ($_GET["idsp"])>0){
+                if(isset($_GET["idsp"])&& ($_GET["idsp"])>0 && ($_POST['donhang'])){
+                    $
+
                     $listspct= loadone_sanpham($_GET["idsp"]);
                     extract($listspct);
-                    
                     include "view/donhang.php";
                 }else{
                     echo "Lỗi to đùng";

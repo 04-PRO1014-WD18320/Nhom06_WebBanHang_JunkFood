@@ -1,6 +1,7 @@
 <?php
 echo "<h1>Đơn Hàng</h1>";
 extract($listspct);
+extract($l)
 $hinh = "upload/" . $img;
 // $linkdh="index.php?act=donhang&idsp=".$id;
 echo '
@@ -31,7 +32,6 @@ echo '
         </div>
         <br>
 
-
     </div>
     <div class="thanhtoan">
     <p>Thành Tiền : ' . $price . ' VND</p>
@@ -47,7 +47,7 @@ echo '
             <form action="">
              <div class="btcart mt10">
 
-                 <input type="button" value="Thanh Toán ">
+                 <input type="button" value="Đặt Hàng" name="dathang">
              
              </div>
             </form>
