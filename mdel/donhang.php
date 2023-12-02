@@ -43,4 +43,14 @@ function get_id_cart_by_user_id($user_id){
 //     pdo_execute($sql,$quantity,$cart_detail_id);
 // }
 
+function insert_donhang($name,$phone,$address,$note,$pttt,$date) {
+    $sql = "INSERT INTO order1(name,tel,adrress,note,pttt,created_at) 
+    VALUES ('$name','$phone','$address','$note','$pttt','$date') ";
+    return pdo_execute($sql );
+}
+function insert_donhang_sp($idbill ,$tensp,$img,$soluong1,$price1,$thanhtien,$date) {
+    $sql = "INSERT INTO order_detail1(order_id ,tensp,img,soluong,price,thanhtien,created_at)
+     VALUES ('$idbill','$tensp','$img','$soluong1','$price1','$thanhtien','$date') ";
+    pdo_execute($sql );
+}
 ?>

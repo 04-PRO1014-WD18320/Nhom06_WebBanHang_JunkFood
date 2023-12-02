@@ -11,12 +11,12 @@ function delete_sanpham($id){
     pdo_query($sql);
 }
 function loadall_sanpham_home(){
-    $sql ="select * from sanpham where 1 order by id desc limit 0,9";
+    $sql ="select * from sanpham where 1 order by id desc limit 0,8 ";
     $listsanpham = pdo_query($sql);
     return    $listsanpham;
 }
 function loadall_sanpham_soluongmin(){
-    $sql ="select * FROM sanpham where soluong < 20";
+    $sql ="select * FROM sanpham where soluong < 20 order by id desc limit 0,4 ";
     $listsanpham = pdo_query($sql);
     return    $listsanpham;
 }
@@ -74,3 +74,14 @@ function update_sanpham($iddm,$id,$tensp,$giasp,$mota,$hinh,$soluong){
         $sql="update sanpham set iddm='".$iddm."', name='".$tensp."', price='".$giasp."', mota='".$mota."' where id=".$id;
     pdo_execute($sql);
 }
+function loadone_ten_dm($iddm){
+    if($iddm>0){
+    $sql="select * from danhmuc where id=".$iddm;
+    $dm=pdo_query_one($sql);
+    extract($dm);
+    return $name;
+    }else{
+        return "";
+    }
+}
+?>

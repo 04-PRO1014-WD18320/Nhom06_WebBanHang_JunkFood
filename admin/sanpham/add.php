@@ -42,7 +42,7 @@
                     <div class="row mb10">
                         <input type="submit" name="themmoi" value="THÊM MỚI">
                         <input type="reset" value="NHẬP LẠI">
-                        <a href="index.php?act=lisdm"><input type="button" value="DANH SÁCH"></a>
+                        <a href="index.php?act=lissp"><input type="button" value="DANH SÁCH"></a>
 
                      </div>
                      
