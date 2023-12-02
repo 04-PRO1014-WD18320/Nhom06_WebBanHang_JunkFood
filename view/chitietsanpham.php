@@ -51,7 +51,7 @@ echo '
             $("#binhluan").load("view/binhluan/binhluan.php", {idpro: <?=$id?>});
             });
     </script>
-    <h3>Bình luận</h3>
+    
     <hr>
     <div class="formbl mt10" id="binhluan">
 </div>
