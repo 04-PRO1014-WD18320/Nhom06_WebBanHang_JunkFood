@@ -1,7 +1,7 @@
 <?php
 echo "<h1>Đơn Hàng</h1>";
 extract($listspct);
-extract($l)
+extract($l);
 $hinh = "upload/" . $img;
 // $linkdh="index.php?act=donhang&idsp=".$id;
 echo '
