@@ -71,7 +71,6 @@ if (isset($_GET['act'])) {
                 if (move_uploaded_file($_FILES["hinh"]["tmp_name"], $target_file)) {
                 } else {
                 }
-
                 insert_sanpham($tensp, $giasp, $hinh, $mota, $iddm, $soluong);
 
                 $thongbao = "them thanh cong";

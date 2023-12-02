@@ -14,14 +14,14 @@
     <div class="container">
         <div class="header">
             <div class="logo">
-                <img src="./images/logo.jpg" width="80" height="80" alt="">
+               <a href="index.php"> <img src="./images/logo.jpg" width="80" height="80" alt=""></a>
             </div>
             <div class="menu">
                 <ul>
                     <li><a href="index.php">Trang chủ</a></li>
-                    <li><a href="#">Đồ khô</a></li>
-                    <li><a href="#">Trái cây</a></li>
-                    <li><a href="#">Đồ uống</a></li>
+                    <li><a href="#">Giới thiệu</a></li>
+                    <li><a href="#">Liên hệ</a></li>
+                    <li><a href="#">Tư vấn</a></li>
                     <li><a href="#">Bánh tươi</a></li>
                 </ul>
             </div>
