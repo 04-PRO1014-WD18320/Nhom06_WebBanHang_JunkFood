@@ -5,6 +5,7 @@ include "../mdel/danhmuc.php";
 include "../mdel/sanpham.php";
 include "../mdel/taikhoan.php";
 include "../mdel/donhang.php";
+include "../mdel/binhluan.php";
 // include "../model/binhluan.php";
 // include "../model/cart.php";
 
@@ -71,7 +72,6 @@ if (isset($_GET['act'])) {
                 if (move_uploaded_file($_FILES["hinh"]["tmp_name"], $target_file)) {
                 } else {
                 }
-
                 insert_sanpham($tensp, $giasp, $hinh, $mota, $iddm, $soluong);
 
                 $thongbao = "them thanh cong";
@@ -167,6 +167,25 @@ if (isset($_GET['act'])) {
                     $cart = get_cart_by_id($_GET['id_cart']);
                     renderAD('don_hang/detail',['cart'=>$cart]);
                 }
+                break;
+            case 'thongke':
+                $listthongke=loadall_thongke();
+                include "thongke/list.php";
+                break;
+            case 'bieudo':
+                $listthongke=loadall_thongke();
+                include "thongke/bieudo.php";
+                break;
+            case 'dsbl':
+                $listbinhluan=loadall_binhluan(0);
+                include "binhluan/list.php";
+                break;
+            case "xoabl":
+                if (isset($_GET["id"]) && ($_GET["id"] > 0)) {
+                    delete_bl($_GET["id"]);
+                }
+                $listbinhluan=loadall_binhluan(0);
+                include "binhluan/list.php";
                 break;
         // case 'dskh':
 
