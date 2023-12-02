@@ -99,7 +99,7 @@
         $hinh="upload/".$img;
     $linksp="index.php?act=sanphamchitiet&idsp=".$id;
     echo '
-    <div class="boxsp mt mr1">
+    <div class="boxsp ">
     <a href="'.$linksp.'"><img src="'.$hinh.'" width="100%" height="150px" alt=""></a>
 
     <div class="namesp">
@@ -137,7 +137,7 @@
         $hinh="upload/".$img;
     $linksp="index.php?act=sanphamchitiet&idsp=".$id;
     echo '
-    <div class="boxsp mt mr1">
+    <div class="boxsp mt ">
     <a href="'.$linksp.'"><img src="'.$hinh.'" width="100%" height="150px" alt=""></a>
 
     <div class="namesp">

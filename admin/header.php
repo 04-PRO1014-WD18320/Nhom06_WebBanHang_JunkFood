@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="./icons/fontawesome-free-6.4.2-web/js/all.min.js"></script>
-    <link rel="stylesheet" href="./longcss/styles.css">
     <link rel="stylesheet" href="../view/datcss/datcss.css">
     <link rel="stylesheet" href="../admin/css/style.css">
 </head>

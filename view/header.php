@@ -47,8 +47,7 @@
             <div class="search">
                 <form action="index.php?act=sanpham" method="post">
                     <input type="text" placeholder="Search" name="kyw">
-                    <input type="submit" name="timkiem" value="   "><i class="fa-solid fa-magnifying-glass timkiem"></i>
-                    <a href=""></a>
+                   <button> <input type="submit" name="timkiem" value=" Tìm kiếm "></button>
                 </form>
             </div>
             <div class="icons">
