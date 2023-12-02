@@ -29,7 +29,6 @@
             <tr>
                 <td><input type="radio" name="pttt" value="0" >Trả tiền khi nhận hàng</td>
                 <td><input type="radio" name="pttt" value="1" >Chuyển khoản ngân hàng</td>
-                <td><input type="radio" name="pttt" value="2">Thanh toán online</td>
             </tr>
         </table>
         </div>
