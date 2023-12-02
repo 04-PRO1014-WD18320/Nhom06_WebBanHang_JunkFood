@@ -202,6 +202,7 @@ if ((isset($_GET['act'])) && ($_GET['act'] != "")) {
                     }
                         insert_donhang_sp($idbill ,$tensp,$img,$soluong1,$price1,$thanhtien,$date1);
                     }
+                    include "view/cart/formdhtc.php";
                 }
             }
             break;

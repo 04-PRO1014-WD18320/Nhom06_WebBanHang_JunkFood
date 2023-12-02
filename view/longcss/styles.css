@@ -612,3 +612,15 @@ background-color: white;
 p{
     padding: 5px;
 }
+/* form đặt hàng thành công */
+.boxdhtc{
+    border: 4px solid orange;
+    width: 100%;
+    height: 200px;
+    text-align: center;
+  
+  
+}
+.boxdhtc h1{
+ margin-top: 80px;
+}
