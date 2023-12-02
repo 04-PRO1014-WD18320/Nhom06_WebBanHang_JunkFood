@@ -29,7 +29,6 @@
             <tr>
                 <td><input type="radio" name="pttt" value="0" >Trả tiền khi nhận hàng</td>
                 <td><input type="radio" name="pttt" value="1" >Chuyển khoản ngân hàng</td>
-                <td><input type="radio" name="pttt" value="2">Thanh toán online</td>
             </tr>
         </table>
         </div>
@@ -63,7 +62,10 @@
             <td><?=$name?></td>
             <td><?=number_format($ttien)."VNĐ"?></td>
         </tr>
-        
+        <tr class="mr">
+            <td>Phí vận chuyển</td>
+            <td><?=number_format(20000)."VNĐ"?></td>
+        </tr>
         <?php
   }
 }

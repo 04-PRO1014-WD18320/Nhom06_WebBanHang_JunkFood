@@ -54,5 +54,8 @@
            <a href="index.php?act=xoagiohang1"> <input name="xoagiohang1" type="button" value="XÓA GIỎ HÀNG"></a>
             </div>
     </form>
+ <div> 
+ 
+ </div>
         </div>
 

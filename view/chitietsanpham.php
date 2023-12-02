@@ -40,25 +40,20 @@ echo '
             <input type="submit" name="addtocart" value="Thêm vào giỏ hàng">
             <input type="submit" value="Mua ngay">
             </div>
-
-            </form>
-            
-     </div>';
-?>
-<div class="formbl mt10" id="binhluan">
           </form>
           </div>
           </div>
                
-<div class="formbl mt10">
-    <h3>Bình luận</h3>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+          <div class="formbl mt10">
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script>
         $(document).ready(function(){
             $("#binhluan").load("view/binhluan/binhluan.php", {idpro: <?=$id?>});
             });
     </script>
+    
     <hr>
+    <div class="formbl mt10" id="binhluan">
 </div>
 <div class="samesp mt10">
     <h3>Sản phẩm tương tự</h3>
