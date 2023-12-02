@@ -37,6 +37,7 @@
                 <div class="text">Caption Three</div>
                 </div>
 
+
                 <!-- Next and previous buttons -->
                 <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
                 <a class="next" onclick="plusSlides(1)">&#10095;</a>
@@ -98,7 +99,7 @@
         $hinh="upload/".$img;
     $linksp="index.php?act=sanphamchitiet&idsp=".$id;
     echo '
-    <div class="boxsp mt">
+    <div class="boxsp mt mr1">
     <a href="'.$linksp.'"><img src="'.$hinh.'" width="100%" height="150px" alt=""></a>
 
     <div class="namesp">
@@ -136,26 +137,26 @@
         $hinh="upload/".$img;
     $linksp="index.php?act=sanphamchitiet&idsp=".$id;
     echo '
-    <div class="boxsp mt">
+    <div class="boxsp mt mr1">
     <a href="'.$linksp.'"><img src="'.$hinh.'" width="100%" height="150px" alt=""></a>
 
     <div class="namesp">
     <a href="'.$linksp.'">'.$name.'</a>
     </div>
- 
+
+    <div class="pricesp">
      <p> '.number_format($price)."VNĐ".'</p>
- 
-    
-     <form action="">
-     <div class="muasp">
-     <input type="hidden" name="id" value="'.$id.'">
-     <input type="hidden" name="name" value="'.$name.'">
-     <input type="hidden" name="img" value="'.$img.'">
-     <input type="hidden" name="price" value="'.$price.'">
-     <input type="submit" name="addtocard" value="Mua ngay">
- </div>
-     </form>
-   
+    </div>
+    <form action="">
+    <div class="muasp">
+    <input type="hidden" name="id" value="'.$id.'">
+    <input type="hidden" name="name" value="'.$name.'">
+    <input type="hidden" name="img" value="'.$img.'">
+    <input type="hidden" name="price" value="'.$price.'">
+    <input type="submit" name="addtocard" value="Mua ngay">
+</div>
+    </form>
+
     </div>
     ';
     }

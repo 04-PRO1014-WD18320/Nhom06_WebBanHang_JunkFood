@@ -40,7 +40,7 @@
                                         } else echo 'Chuyển khoản ngân hàng';
                                         ?>
                                     </span></td>
-                                <td><span class="status pending">
+                                <td><span>
                                         <?php
                                         if ($role == 0) {
                                             echo 'Chờ xác nhận';
