@@ -197,8 +197,16 @@ if ((isset($_GET['act'])) && ($_GET['act'] != "")) {
                        $price1=$price;
                        $thanhtien=$soluong1*$price1;
                        $date1=DATE('h:i:sa d/m/Y');
+                       if(isset($_POST['pttt'])){
+                        if($_POST['pttt']==0){
+                            $thanhtien=$thanhtien+20000;
+                        }else{
+                            $thanhtien=$thanhtien+20000;
+                        }
+                    }
                         insert_donhang_sp($idbill ,$tensp,$img,$soluong1,$price1,$thanhtien,$date1);
                     }
+                    include "view/cart/formdhtc.php";
                 }
             }
             break;

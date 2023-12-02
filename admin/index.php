@@ -6,6 +6,7 @@ include "../mdel/sanpham.php";
 include "../mdel/taikhoan.php";
 include "../mdel/donhang.php";
 include "../mdel/binhluan.php";
+include "../mdel/cart.php";
 // include "../model/binhluan.php";
 // include "../model/cart.php";
 

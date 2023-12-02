@@ -48,6 +48,9 @@
     left: 25%;
     top:50px;
 }
+.search input[type="submit"]{
+    padding: 10px;
+}
 .timkiem{
     position: absolute;
     top: 8px;
@@ -77,13 +80,22 @@
     font-size: 20px;
     font-weight: bold;
 }
+.search button{
+    border: none;
+    border-radius: 20px;
+    padding-left: 2px;
+    font-weight: bold;
+}
+.search button:hover{
+    background-color: red;
+}
 .search  a:hover{
     color: aliceblue;
     font-weight: bolder;
 }
 .icons{
     position: absolute;
-    right: 200px;
+    right: 100px;
     top: 100px;
 }
 .icons a{
@@ -110,6 +122,7 @@
 .boxspfisst{
 display: grid;
 grid-template-columns: 1fr 1fr 1fr 1fr;
+gap: 20px;
 }
 .boxsp{
     float: left;
@@ -496,10 +509,11 @@ width: 100%;
 .formtable table{
     width: 100%;
     border-collapse:collapse ;
+   
 }
 .formtable table th{
     padding: 20px;
-    background-color: #CCC;
+    background-color: orange;
 }
 .formtable table td{
     padding: 10px 20px;
@@ -591,10 +605,22 @@ background-color: white;
 }
 .boxmybill{
     display: grid;
-    grid-template-columns: 60% 30%;
+    grid-template-columns: 50% 40%;
     grid-gap:10%;
   
 }
 p{
     padding: 5px;
+}
+/* form đặt hàng thành công */
+.boxdhtc{
+    border: 4px solid orange;
+    width: 100%;
+    height: 200px;
+    text-align: center;
+  
+  
+}
+.boxdhtc h1{
+ margin-top: 80px;
 }
