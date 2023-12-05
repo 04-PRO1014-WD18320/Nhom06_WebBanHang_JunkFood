@@ -16,15 +16,17 @@ if (is_file($hinhpath)) {
     </div>
     <div class="row frmcontent">
         <form action="index.php?act=updatesp" method="post" enctype="multipart/form-data">
+            <input type="hidden" name="id" value="<?php echo $id ?>">
             <div class="row mb10">
                 <select name="iddm" id="">
                     <option value="0" selected>Tất cả</option>
                     <?php
                     foreach ($listdanhmuc as $danhmuc) {
                         extract($danhmuc);
-                        if ($iddm == $id) $s ="selected"; else $s = "";
+                        if ($iddm == $id) $s = "selected";
+                        else $s = "";
                         echo ' <option value="' . $id . '" ' . $s . '>' . $namedm . '</option>';
-                    } 
+                    }
                     ?>
 
                 </select>
@@ -52,7 +54,6 @@ if (is_file($hinhpath)) {
             </div>
 
             <div class="row mb10">
-                <input type="hidden" name="id" value="<?php echo $id ?>">
                 <input type="submit" name="capnhat" value="CẬP NHẬT">
                 <input type="reset" value="NHẬP LẠI">
                 <a href="index.php?act=lissp"><input type="button" value="DANH SÁCH"></a>
