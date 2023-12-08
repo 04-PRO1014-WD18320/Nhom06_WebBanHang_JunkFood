@@ -61,13 +61,16 @@ if ((isset($_GET['act'])) && ($_GET['act'] != "")) {
             break;
         case 'dangky':
             if (isset($_POST['dangky']) && ($_POST['dangky'])) {
+          
+            
                 $email = $_POST['email'];
                 $user = $_POST['user'];
                 $pass = $_POST['pass'];
                 $tel = $_POST['tel'];
                 $address = $_POST['address'];
                 insert_taikhoan($email, $user, $pass, $tel, $address);
-            }
+            } 
+
             $thongbao = "Đăng Ký Thành Công";
             include "view/login/dangky.php";
             break;

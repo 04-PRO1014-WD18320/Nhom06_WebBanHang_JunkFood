@@ -33,11 +33,11 @@ if (is_file($hinhpath)) {
             </div>
             <div class="row mb10">
                 Tên sản phẩm <br>
-                <input type="text" name="tensp" id="" value="<?php echo $sanpham["name"]  ?>">
+                <input type="text" name="tensp" id="" value="<?php echo $sanpham["name"]  ?>" required>
             </div>
             <div class="row mb10">
                 Giá <br>
-                <input type="text" name="giasp" id="" value="<?php echo  $sanpham["price"] ?>">
+                <input type="number" name="giasp" id="" value="<?php echo  $sanpham["price"] ?>"required>
             </div>
             <div class="row mb10">
                 Hình <br>
@@ -46,11 +46,11 @@ if (is_file($hinhpath)) {
             </div>
             <div class="row mb10">
                 Mô tả <br>
-                <textarea name="mota" id="" cols="30" rows="10"><?php echo $sanpham["mota"] ?></textarea>
+                <textarea name="mota" id="" cols="30" rows="10" re><?php echo $sanpham["mota"] ?></textarea >
             </div>
             <div class="row mb10">
                 Giá <br>
-                <input type="number" name="soluong" id="" value="<?php echo $sanpham["soluong"] ?>">
+                <input type="number" name="soluong" id="" value="<?php echo $sanpham["soluong"] ?>" required>
             </div>
 
             <div class="row mb10">
