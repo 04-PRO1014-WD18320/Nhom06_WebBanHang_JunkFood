@@ -60,9 +60,7 @@ if ((isset($_GET['act'])) && ($_GET['act'] != "")) {
                 $email = $_POST['email'];
                 $user = $_POST['user'];
                 $pass = $_POST['pass'];
-                $tel = $_POST['tel'];
-                $address = $_POST['address'];
-                insert_taikhoan($email, $user, $pass, $tel, $address);
+                insert_taikhoan($email, $user, $pass);
             }
             $thongbao = "Đăng Ký Thành Công";
             include "view/login/dangky.php";
