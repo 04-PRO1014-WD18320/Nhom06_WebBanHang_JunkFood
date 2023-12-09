@@ -17,23 +17,23 @@
                     </div>
                     <div class="row mb10">
                         Tên sản phẩm <br>
-                        <input type="text" name="tensp" id="">
+                        <input type="text" name="tensp" id="" required>
                     </div>
                     <div class="row mb10">
                         Giá <br>
-                        <input type="text" name="giasp" id="">
+                        <input type="number" name="giasp" id="" required>
                     </div>
                     <div class="row mb10">
                         Hình  <br>
-                      <input type="file" name="hinh" id="">
+                      <input type="file" name="hinh" id="" required>
                     </div>
                     <div class="row mb10">
                        Mô tả <br>
-                        <textarea name="mota" id="" cols="30" rows="10"></textarea>
+                        <textarea name="mota" id="" cols="30" rows="10"></textarea required>
                     </div>
                     <div class="row mb10">
                         số lượng <br>
-                        <input type="number" name="soluong" id="">
+                        <input type="number" name="soluong" id="" required>
                     </div>
                     <!-- <div class="row mb10">
                         trang thai <br>
