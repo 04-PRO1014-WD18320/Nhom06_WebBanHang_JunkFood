@@ -10,7 +10,7 @@
                     </div>
                     <div class="row mb10">
                         Tên loại <br>
-                        <input type="text" name="namedm" id="">
+                        <input type="text" name="namedm" id="" required>
                     </div>
                      <div class="row mb10">
                         <input type="submit" name="themmoi" value="THÊM MỚI">
