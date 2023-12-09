@@ -11,8 +11,10 @@ include "mdel/cart.php";
 include "mdel/giohang.php";
 include "mdel/donhang.php";
 include "view/header.php";
+
 $listsp = loadall_sanpham_home();
 $listspmin = loadall_sanpham_soluongmin();
+
 if ((isset($_GET['act'])) && ($_GET['act'] != "")) {
     $act = $_GET['act'];
     switch ($act) {
@@ -45,6 +47,7 @@ if ((isset($_GET['act'])) && ($_GET['act'] != "")) {
             }
             break;
         case "donhang":
+
             if (isset($_GET["idsp"]) && ($_GET["idsp"]) > 0) {
                 $listspct = loadone_sanpham($_GET["idsp"]);
                 extract($listspct);
@@ -54,15 +57,16 @@ if ((isset($_GET['act'])) && ($_GET['act'] != "")) {
                 echo "Lỗi to đùng";
                 include "view/home.php";
             }
+
             break;
         case 'dangky':
             if (isset($_POST['dangky']) && ($_POST['dangky'])) {
+          
+            
                 $email = $_POST['email'];
                 $user = $_POST['user'];
                 $pass = $_POST['pass'];
-                $tel = $_POST['tel'];
-                $address = $_POST['address'];
-                insert_taikhoan($email, $user, $pass, $tel, $address);
+                insert_taikhoan($email, $user, $pass);
             }
             $thongbao = "Đăng Ký Thành Công";
             include "view/login/dangky.php";
