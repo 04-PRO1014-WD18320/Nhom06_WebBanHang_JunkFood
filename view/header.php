@@ -30,6 +30,26 @@
 </head>
 
 <body>
+<script>
+        function thongBao(){
+            var search1 = document.getElementById("search");
+            var loi11 = document.getElementById("loi1");
+            var dem = 0;
+            if(search1.value.length == 0 ){
+                dem ++;
+                loi11.innerText = 'Nhập sản phẩm cần tìm';
+            }
+            else{
+                loi11.innerText = '';
+            }
+            if(dem == 0){
+                return true;
+            }
+            else{
+                return false;
+            }
+        }
+    </script>
     <div class="container">
         <div class="header">
             <div class="logo">
@@ -45,9 +65,9 @@
                 </ul>
             </div>
             <div class="search">
-                <form action="index.php?act=sanpham" method="post">
-                    <input type="text" placeholder="Search" name="kyw">
-                   <button> <input type="submit" name="timkiem" value=" Tìm kiếm "></button>
+                <form action="index.php?act=sanpham" onsubmit=" return thongBao()" method="post">
+                    <input type="text" placeholder="Search" id="search" name="kyw">
+                   <button> <input type="submit" name="timkiem" value=" Tìm kiếm "></button><label for="" id="loi1"></label>
                 </form>
             </div>
             <div class="icons">
